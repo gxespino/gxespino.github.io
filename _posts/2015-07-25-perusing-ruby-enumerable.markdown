@@ -7,7 +7,7 @@ categories: ruby enumerable
 
 1. **all?** Returns true or false depending on the results of iterating through the collection. If there is a nil or false in the collection, all? will return false - obviously. If there is no block, ruby adds an implicit `{ |obj| obj }` which returns true. 
 
-2. **any?** Here's a gotcha - it will return true if ANY of the elements are not faly or nil. 
+2. **any?** Here's a gotcha - it will return true if ANY of the elements are not false or nil. 
 
 3. **collect** - Returns a new array. 
 
@@ -17,14 +17,14 @@ categories: ruby enumerable
 
 6. **cycle** - potential for infinity. Takes an argument that defaults to nil (cycle forever). 
 
-7. **find** - takes an argument that will return it's result if no object matches the enumerable. Gotcha - need to call argument with a lambda otherwie you'll get an error. 
+7. **find** - takes an argument that will return it's result if no object matches the enumerable. Gotcha - need to call argument with a lambda otherwise you'll get an error. 
 
 {% highlight ruby %}
 (1..10).find( -> { "nope" }) { |num| num == 15 }
 => "nope"
 {% endhighlight %}
 
-8. **drop/drop** while - Drops the n element in a collection. Does exactly what you think it does. 
+8. **drop/drop** while - Drops the `n` element in a collection. Does exactly what you think it does. 
 
 9. **each_cons** - returns a consecutive `n` of elements. Weird one here, can't think of any uses for it, yet. 
 
