@@ -34,4 +34,3 @@ categories: ruby enumerable
 
 12. **each_with_object** - Seems like a better way to create hashes as opposed to inject. Will have to play with this one. 
 
-13. 
