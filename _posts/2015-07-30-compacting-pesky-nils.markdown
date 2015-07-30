@@ -29,4 +29,4 @@ full_name = [first, middle, last].compact.join(" ")
 #=> "Forgetfull"
 {% endhighlight %}
 
-At the end of the day it's best to assume any value could potentially be nil - so it's best to code in ways that prevents nil (either through coercion or removal) or risk unexepected results or worse, that pesky `NoMethodError`. 
+At the end of the day it's best to assume any value could potentially be nil - so it's best to code in ways that prevents nil (either through coercion or nil removal) or risk unexepected results or worse, that pesky `NoMethodError`. 
