@@ -17,4 +17,3 @@ categories: ruby enumerable
 
 6. **group_by** Groups the collection by the result of the supplied block. Can be immediately useful when grouping collectiosn by months or days in Rails apps. There are a lot of uses for this. Just iterate through the supplied hash using each to display grouped data in a Rails view. 
 
-7. 
