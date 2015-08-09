@@ -19,4 +19,6 @@ At the end of the day, after spending a couple hours pondering on my options (tw
 
 One of my mentors said it best: "Don't pre optimize for performance, especially for an app with ZERO users." 
 
---End Ramble 
+--End Ramble
+
+
