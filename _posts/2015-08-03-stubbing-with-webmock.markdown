@@ -140,5 +140,5 @@ Finished in 0.01472 seconds (files took 2.62 seconds to load)
 
 **Things to consider**
 
-1. Our copy of Matz's wiki can get out of sync if anyone were to update it in the future. This could later lead to failed tests.
+1. Our copy of Matz's wiki can get out of sync if anyone were to his wiki in the future. This could later lead to failed tests.
 2. In a large application, we'll end up with a lot of copied external sources (html, json, etc). This could lead to a lot of maintenance overhead.
