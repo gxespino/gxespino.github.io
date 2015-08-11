@@ -15,7 +15,7 @@ permalink: /about/
 
 <h3>Open Source Contributions</h3>
 <ul>
-  <li><a target="_blank" href="https://github.com/saturnflyer/purple_door">Purple Door Foundation</a></li>
+  <li><a target="_blank" href="https://github.com/saturnflyer/purple_door/commits?author=gxespino">Purple Door Foundation</a></li>
   <li><a target="_blank" href="https://github.com/us-vote-ruby-for-good/us-vote-api">U.S. Vote Foundation</a></li>
   <li><a target="_blank" href="https://github.com/OperationCode/operationcode">Operation Code</a></li>
 </ul>
