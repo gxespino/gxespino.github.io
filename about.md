@@ -40,6 +40,7 @@ permalink: /about/
 * Rails
 * PostgreSQL
 * Heroku
+* Github
 * RSpec
 * HTML/CSS
 * Saas
