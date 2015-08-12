@@ -29,7 +29,7 @@ permalink: /about/
 
 <h3>Contact</h3>
 <p>Email: <a href="mailto:glennpeter.espinosa@gmail.com?Subject=Hey%20Glenn!" target="_top">glennpeter dot espinosa at gmail dot com</a></p>
-<p>Connect with me on <a target="_blank" href="http://www.twitter.com/gpespn">Twitter</a>, <a target="_blank" href="http://www.github.com/gxespino">GitHub</a>, and <a target="_blank" href="https://www.linkedin.com/profile/view?id=80349752">LinkedIn</a>. Also, check out this ever growing list of personal and professional projects.</p>
+<p>Connect with me on <a target="_blank" href="http://www.twitter.com/gpespn">Twitter</a>, <a target="_blank" href="http://www.github.com/gxespino">GitHub</a>, and <a target="_blank" href="https://www.linkedin.com/profile/view?id=80349752">LinkedIn</a>.</p>
 
 <h3>Not accepting new projects</h3>
 <p>I am currently looking for employment with the ideal company. I have extensive experience working with and founding startups, meeting tight deadlines, fast iteration sprints, and optimizing for the bottom line. I'm the founder of <a target="_blank" href="http://www.meetup.com/Alexandria-Code-Coffee/">Alexandria Code & Coffee</a> where developers reach out and mentor new developers.</p> 
