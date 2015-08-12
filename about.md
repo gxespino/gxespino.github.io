@@ -27,6 +27,15 @@ permalink: /about/
   <li><a target="_blank" href="https://github.com/gxespino/how-many-patients/blob/master/spec/models/location_spec.rb">Tests for a location model utilizing the geocode gem and WebMock for stubbing</a></li>
 </ul>
 
+<h3>Lightning Talks</h3>
+<ul>
+  <li>
+     <p><img src="https://s3-us-west-2.amazonaws.com/g-portfolio/image1.JPG" width="200" height="112"></img></p>
+     <a target="_blank" href="http://www.slideshare.net/gespinosa1/web-mock">Stubbing with WebMock</a><i> - slides don't do it justice, you had to be there</i>
+     <p>Gave a 5 minute talk on stubbing external services within tests using the gem WebMock. I gave a live demonstration on WebMock's usage via a TDD approach and lastly, I discussed the pros and cons of stubbing external services in general.</p>
+  </li>
+</ul>
+
 <h3>Contact</h3>
 <p>Email: <a href="mailto:glennpeter.espinosa@gmail.com?Subject=Hey%20Glenn!" target="_top">glennpeter dot espinosa at gmail dot com</a></p>
 <p>Connect with me on <a target="_blank" href="http://www.twitter.com/gpespn">Twitter</a>, <a target="_blank" href="http://www.github.com/gxespino">GitHub</a>, and <a target="_blank" href="https://www.linkedin.com/profile/view?id=80349752">LinkedIn</a>.</p>
