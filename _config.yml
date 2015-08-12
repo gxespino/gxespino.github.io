@@ -1,12 +1,41 @@
-# Site settings
-title: Glenn Dreams of Code
-email: glennpeter.espinosa@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Adventures of a nurse turned hacker/programmer. Features articles regarding coding, nursing, and random musing - also occasional essays on topics I'm interested in, which could pretty much be anything.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://gespinosa.org" # the base hostname & protocol for your site
-twitter_username: gpespn
-github_username:  gxespino
+name: Glenn Dreams of Code
+description: Code, Ruby, Musings, etc.
+meta_description: "A nurse/hackers site about programming and healthcare"
 
-# Build settings
-markdown: kramdown
+aboutPage: true
+
+markdown: redcarpet
+highlighter: pygments
+
+paginate: 20
+baseurl: /
+domain_name: 'http://gespinosa.org'
+disqus: false
+disqus_shortname: 'your-disqus-shortname'
+
+# Details for the RSS feed generator
+url:            'http://gespinosa.org'
+author:         'Glenn Espinosa'
+authorTwitter:  'gpespn'
+
+permalink:       /:year/:title/
+
+defaults:
+    -
+        scope:
+            path: "" # empty string for all files
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: "" # empty string for all files
+            type: posts
+        values:
+            layout: post
+    -
+        scope:
+            path: ""
+            type: drafts
+        values:
+            layout: post
