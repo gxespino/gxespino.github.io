@@ -50,8 +50,8 @@ profile: true
 * Heroku
 * Github
 * RSpec
-* HTML/CSS
-* Saas
+* AWS/S3
+* HTML/CSS/Saas
 * Vim/Tmux/NERDtree
 
 <p>In my spare time I enjoy traveling, weight lifting, and I'm also a closet history buff. My best work would be something that merges my extensive clinical domain knowledge with my software development skills. Are you a healthcare startup? <a href="mailto:glennpeter.espinosa@gmail.com?Subject=Hey%20Glenn!" target="_top">Contact me!</a></p>
