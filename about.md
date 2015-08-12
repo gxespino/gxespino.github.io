@@ -32,7 +32,7 @@ permalink: /about/
   <li>
      <p><img src="https://s3-us-west-2.amazonaws.com/g-portfolio/image1.JPG" width="200" height="112"></img></p>
      <a target="_blank" href="http://www.slideshare.net/gespinosa1/web-mock">Stubbing with WebMock</a><i> - slides don't do it justice, you had to be there</i>
-     <p>Gave a 5 minute talk on stubbing external services within tests using the gem WebMock. I gave a live demonstration on WebMock's usage via a TDD approach and lastly, I discussed the pros and cons of stubbing external services in general.</p>
+     <p>Gave a 5 minute talk on stubbing external services within tests using the WebMock gem. I gave a live demonstration on WebMock's usage via a TDD approach and lastly, I discussed the pros and cons of stubbing external services in general.</p>
   </li>
 </ul>
 
@@ -58,6 +58,3 @@ permalink: /about/
 <p>In my spare time I enjoy traveling, weight lifting, and I'm also a closet history buff. My best work would be something that merges my extensive clinical domain knowledge with my software development skills. Are you a healthcare startup? <a href="mailto:glennpeter.espinosa@gmail.com?Subject=Hey%20Glenn!" target="_top">Contact me!</a></p>
 
 <p>However, if you contact me for .NET opportunities, you can expect not to hear from me.</p>
-
-<h3>About gespinosa.org</h3>
-<p>This blog is powered by <a target="_blank" href="http://jekyllrb.com/">Jekyll</a>, a static blogging engine framework. The files are self-hosted and articles are written in Markdown on a local machine, then rsync’ed to the server.</p>
