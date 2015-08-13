@@ -85,7 +85,7 @@ Running our specs again should give us this error:
 Failures:
 
   1) Browser browses Matz's wiki
-       Failure/Error: expect(response).to have_content("omg, this is amazing!")
+       Failure/Error: expect(response).to have_content("MINASWAN")
          expected to find text "MINASWAN" in ""
        # ./spec/features/browser_browses_spec.rb:15:in `block (2 levels) in <top (required)>'
        
