@@ -8,7 +8,7 @@ profile: true
 
 <h3>Major Projects</h3>
 <ul>
-  <li><a target="_blank" href="http://adddapt.herokuapp.com">Adddapt</a></li>
+  <li><a target="_blank" href="https://fast-wildwood-4190.herokuapp.com/">Adddapt</a></li>
   <li><a target="_blank" href="https://github.com/gxespino/how-many-patients">howmanypatients.com</a></li>
   <li><a target="_blank" href="http://www.trysavory.com">Savory</a></li>
 </ul>
