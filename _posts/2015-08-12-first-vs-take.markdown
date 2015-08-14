@@ -24,7 +24,7 @@ What will get you in trouble, though, is when you are dealing with empty arrays.
 {% highlight ruby %}
 empty_array = []
 
-empty_array.first 
+empty_array.take 
 
 #=> ArgumentError: Wrong number of arguments (0 for 1)
 
