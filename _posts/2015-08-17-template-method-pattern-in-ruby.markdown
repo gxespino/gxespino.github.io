@@ -5,7 +5,7 @@ date:   2015-08-17 14:28:17
 categories: Ruby Design Patterns
 ---
 
-Sometimes when designing applications you'll come across a section that is constantly changing or being added on to. A tell tale sign of this is when you have a proliferation of if/then statements in a method that all follow the same general structure but for specific cases. That last sentence may not have made too much sense but heres a few examples:
+Sometimes when designing applications you'll come across a section that is constantly changing or being added on to. A tell tale sign of this is when you have a proliferation of if/then statements in a method that all follow the same general structure but for specific cases. That last sentence may not have made too much sense but here are a few examples:
 
 * You have a payment system that takes in customer data and card info but you need specific steps for when a customer uses paypal vs stripe vs dwolla.
 * You're sending out an automated report but need to display the output using a variety of file types (html, json, xml).
