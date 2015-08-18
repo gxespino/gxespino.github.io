@@ -69,7 +69,7 @@ class Chess < Game
   end
 
   def end_of_game
-    # returns true of checkmate condition
+    # returns true if checkmate condition
     # is met
   end
 
