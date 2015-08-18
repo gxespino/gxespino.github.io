@@ -76,6 +76,7 @@ class Chess < Game
   def display_winner
     # displays who won
   end
+end
 
 # Now we can instantiate each game as follows:
 
@@ -84,7 +85,6 @@ monopoly.start_game
 
 chess = Chess.new
 chess.start_game
-end
 
 {% endhighlight %}
 
