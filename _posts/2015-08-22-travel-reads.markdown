@@ -5,7 +5,7 @@ date:   2015-08-25 02:28:17
 categories: Ruby Rails Books
 ---
 
-I'll be traveling to the Philippines over the next two weeks. My original plan was to spend August and September 2015 in Thailand at a co-working spot in Ko Lanta, reading, wrapping up some projects, and doing a lot of self-reflection after wrapping up my nursing career. 
+I'll be traveling in and around the Philippines over the next two weeks. My original plan was to spend August and September 2015 in Thailand at a co-working spot in Ko Lanta, reading, wrapping up some projects, and doing a lot of self-reflection after wrapping up my nursing career. 
 
 Well after the terrorist bombings in Bangkok, I decided to cancel the Thailand trip and head to the Philippines instead. I'll be spending a week in El Nido and Coron, Palawan, as well as a few nights in Metro Manila. 
 
