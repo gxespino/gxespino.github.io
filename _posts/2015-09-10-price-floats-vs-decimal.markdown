@@ -7,7 +7,7 @@ categories: Ruby Design Patterns Data Types
 
 I recently learned the hard way the importance of avoiding the use of Floats for storing currency values in Ruby. Floats abide by 'floating point arithmetic' and thus results in the representation of real numbers via a formulaic expressions, namely to serve as a tradeoff between range in precision. More info about the topic can be read [here](https://en.wikipedia.org/wiki/Floating_point).
 
-What this meant was that storing prices in floats often led to an accumulation of small values that overtime will result in inaccuracies. Fore example: 
+What this meant was that storing prices in Floats often led to an accumulation of small values that overtime resulted in inaccurate prices. For example: 
 
 {% highlight ruby %}
 "1.03".to_f - ".42".to_f
