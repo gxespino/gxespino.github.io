@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Extract Value Objects"
+title:  "Extracting Value Objects"
 date:   2015-09-16 10:05:44
 categories: Ruby Design Patterns Data Types OOP 
 ---
