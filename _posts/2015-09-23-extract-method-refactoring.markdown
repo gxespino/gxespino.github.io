@@ -67,4 +67,4 @@ end
 
 After extracting the expression logic into separate methods, we now have more manageable code that is much easier to understand. If we had tests to test the total_compensation method prior to the refactoring, they should still pass at this point.
 
-
+Bonus: There's a repeating pattern here that would also benefit from refactoring. Let me know what you think in the comments. 
