@@ -14,20 +14,19 @@ Here's an example using a Salary class that calculates an employee's total compe
 {% highlight ruby %}
 class Salary
 
-  def initialize(base, bonus_percentage: 0, seniority_factor: 0, deduction_percentage: 0)
+  def initialize(base, bonus_percentage: 0, seniority_factor: 0)
     @base = base
     @bonus_percentage = bonus_percentage
     @seniority_factor = seniority_factor
-    @deducation_percentage = deduction_percentage
   end
 
   def total_compensation
-    base + (base * (bonus_percentage / 100.0)) + (base * (seniority_factor / 100.0)) - (base * (deduction / 100.00))
+    base + (base * (bonus_percentage / 100.0)) + (base * (seniority_factor / 100.0)) 
   end
 
   private
   
-  attr_reader :base, :bonus_percentage, :seniority_factor, :deduction_percentage
+  attr_reader :base, :bonus_percentage, :seniority_factor
 end
 {% endhighlight %}
 
@@ -36,15 +35,14 @@ The total_compensation method is hard to understand and would benefit from extra
 {% highlight ruby %}
 class Salary
 
-  def initialize(base, bonus_percentage: 0, seniority_factor: 0, deduction_percentage: 0)
+  def initialize(base, bonus_percentage: 0, seniority_factor: 0)
     @base = base
     @bonus_percentage = bonus_percentage
     @seniority_factor = seniority_factor
-    @deducation_percentage = deduction_percentage
   end
 
   def total_compensation
-    base + bonus + seniority_factor - deduction
+    base + bonus + seniority_factor 
   end
 
   private
@@ -56,12 +54,8 @@ class Salary
   def seniority
     base * (seniority_factor / 100.0)
   end
-
-  def deduction
-    base * (deduction_percentage / 100.0)
-  end
   
-  attr_reader :base, :bonus_percentage, :seniority_factor, :deduction_percentage
+  attr_reader :base, :bonus_percentage, :seniority_factor
 end
 {% endhighlight %}
 
