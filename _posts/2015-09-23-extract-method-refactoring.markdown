@@ -42,7 +42,7 @@ class Salary
   end
 
   def total_compensation
-    base + bonus + seniority_factor 
+    base + bonus + seniority
   end
 
   private
