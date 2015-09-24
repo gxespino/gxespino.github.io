@@ -14,11 +14,11 @@ Here's an example using a Salary class that calculates an employee's total compe
 {% highlight ruby %}
 class Salary
 
-  def initialize(base:, bonus_percentage: 0, seniority_factor: 0, deduction:)
-    @base = amount
+  def initialize(base, bonus_percentage: 0, seniority_factor: 0, deduction_percentage: 0)
+    @base = base
     @bonus_percentage = bonus_percentage
     @seniority_factor = seniority_factor
-    @deducation = deduction
+    @deducation_percentage = deduction_percentage
   end
 
   def total_compensation
@@ -27,7 +27,7 @@ class Salary
 
   private
   
-  attr_reader :base, :bonus_percentage, :seniority_factor, :deduction
+  attr_reader :base, :bonus_percentage, :seniority_factor, :deduction_percentage
 end
 {% endhighlight %}
 
@@ -36,11 +36,11 @@ The total_compensation method is hard to understand and would benefit from extra
 {% highlight ruby %}
 class Salary
 
-  def initialize(base:, bonus_percentage: 0, seniority_factor: 0, deduction:)
-    @base = amount
+  def initialize(base, bonus_percentage: 0, seniority_factor: 0, deduction_percentage: 0)
+    @base = base
     @bonus_percentage = bonus_percentage
     @seniority_factor = seniority_factor
-    @deducation = deduction
+    @deducation_percentage = deduction_percentage
   end
 
   def total_compensation
@@ -58,10 +58,10 @@ class Salary
   end
 
   def deduction
-    base * (deduction / 100.0)
+    base * (deduction_percentage / 100.0)
   end
   
-  attr_reader :base, :bonus_percentage, :seniority_factor, :deduction
+  attr_reader :base, :bonus_percentage, :seniority_factor, :deduction_percentage
 end
 {% endhighlight %}
 
