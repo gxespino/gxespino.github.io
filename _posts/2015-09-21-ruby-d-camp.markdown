@@ -17,7 +17,7 @@ Either way, by the end of day 1, and six pairing sessions later, I was completel
 
 #####Partner: Josef Diago
 
-Simply put, Josef is a vim master. Having switched to vim recently, I left with a ton of tricks to better my vim-fu. Regarding GoL, the approach we took was one that I was most familiar with, the inside-out approach, meaning we starting with the most granular of tests and worked our way outward.
+Simply put, Josef is a vim master. Having switched to vim recently, I left with a ton of tricks to better my vim-fu. Regarding GoL, the approach we took was one that I was most familiar with, the inside-out approach, meaning we started with the most granular of tests and worked our way outward.
 
 We started by considering a Cell object and writing out tests for what a Cell does and what messages it should send to other objects. We worked our way up to considering a Grid object that initialized with an array of Cell objects. 
 
@@ -45,7 +45,7 @@ The last two days of DCamp consisted of round table discussions on topics voted 
 
 **Algorithms for the Non-CS Major:** My motivation for suggesting this topic was to help juniors such as myself better understand what algorithms are and what we need to know about them from a first job perspective. The consensus was that you don't need to know algorithms specifically but rather know when they are important to consider (speed wise) and how you would go about finding more information when needed. Essentially, algorithms are code _recipes_ that are followed to solve a specific problem.
 
-**Cool Projects:** I attended this session with the goal of finding new projects to work on as well as learning more about how other devs manage their side projects. For me, I often find myself starting projects constantly but then losing motivation for a number of reasons. Josh Szmadja offered up a really good tip on how to organize multiple sideprojects: Write a detailed README as soon as possible and while you're still excited about a project. Write about your motivations, what you want to accomplish and everything you're thinking about regarding the project at that moment. This will help 1-2 or even 3 years later when you have the itch to revisit an old project. I like how Josh referred to one of his projects as having had "two weeks of worth over the course of a year." This led to the realization that I'm not alone when it comes to not finishing projects and that sometimes its OK.
+**Cool Projects:** I attended this session with the goal of finding new projects to work on as well as learning more about how other devs manage their side projects. For me, I often find myself starting projects constantly but then losing motivation for a number of reasons. Josh Szmadja offered up a really good tip on how to organize multiple sideprojects: Write a detailed README as soon as possible and while you're still excited about a project. Write about your motivations, what you want to accomplish and everything you're thinking about regarding the project at that moment. This will help 1-2 or even 3 years later when you have the itch to revisit an old project. I like how Josh referred to one of his projects as having had "two weeks worth of work completed over the course of a year." This led to the realization that I'm not alone when it comes to not finishing projects and that sometimes its OK.
 
 ##DCamp's Takeaway
 
