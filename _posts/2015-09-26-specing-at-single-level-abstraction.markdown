@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Specs at a Single Level of Abstraction"
-date: 2015-09-23 13:05:40
+date: 2015-09-26 13:05:40
 categories: Ruby Refactoring
 ---
 
