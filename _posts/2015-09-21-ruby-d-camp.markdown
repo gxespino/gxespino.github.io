@@ -49,7 +49,7 @@ The last two days of DCamp consisted of round table discussions on topics voted 
 
 ##DCamp's Takeaway
 
-True to it's overall theme: **DCamp leaves you wanting more.** Whether it's from the sessions you attended and the new technologies you want to explore, or the amazing people you meet and the issues they inspire you to tackle--Ruby DCamp whets your intellectual appetite.
+True to it's overall theme: **DCamp leaves you wanting more.** Whether it's from the sessions you attended and the new technologies you want to explore, or the amazing people you met and the issues they inspire you to tackle--Ruby DCamp whets your intellectual appetite.
 
 Ruby DCamp is a wonderful late year tune up for software developers to renew their fervor for learning and growing. Thanks to Evan, the organizers, and all the attendees for an amazing experience. I hope to see all of you next year while connecting with many of you all throughout the year.
 
