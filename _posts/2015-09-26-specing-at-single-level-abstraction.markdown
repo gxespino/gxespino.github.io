@@ -28,18 +28,6 @@ feature "User imports datasets" do
     expect(Dataset.where(salaries_filename: "example_salaries.csv")).to exist
   end
 
-  scenario "unsuccessfully due to missing a Salary Dataset" do
-    visit root_path
-    click_on("Import new datasets")
-
-    fill_in("Name", with: "DraftKingsWeek2")
-    attach_file("Salaries", Rails.root + "spec/fixtures/example_salaries.csv")
-    click_on("Import")
-
-    expect(page).to have_css('p', text: 'All form fields must be completed!')
-    expect(Dataset.where(salaries_filename: "example_salaries.csv")).not_to exist
-  end
-
 # ...
 end
 {% endhighlight %}
@@ -68,21 +56,6 @@ feature "User imports datasets" do
     expect(Dataset.where(salaries_filename: "example_salaries.csv")).to exist
   end
 
-  scenario "unsuccessfully due to missing a Salary Dataset" do
-    # setup
-    visit root_path
-    click_on("Import new datasets")
-
-    # exercise
-    fill_in("Name", with: "DraftKingsWeek2")
-    attach_file("Salaries", Rails.root + "spec/fixtures/example_salaries.csv")
-    click_on("Import")
-    
-    # verify
-    expect(page).to have_css('p', text: 'All form fields must be completed!')
-    expect(Dataset.where(salaries_filename: "example_salaries.csv")).not_to exist
-  end
-
 # ...
 end
 {% endhighlight %}
@@ -104,15 +77,6 @@ feature "User imports datasets" do
     expect(Dataset.where(salaries_filename: "example_salaries.csv")).to exist
   end
 
-  scenario "unsuccessfully due to missing a Salary Dataset" do
-    visit_new_dataset_page
-
-    create_dataset(name: "DraftKingsWeek2", rankings_file: "example_rankings.csv")
-
-    expect(page).to have_message('All form fields must be completed!')
-    expect(Dataset.where(salaries_filename: "example_salaries.csv")).not_to exist
-  end
-
 # ...
 
   def visit_new_dataset_page
@@ -126,8 +90,8 @@ feature "User imports datasets" do
     salaries_file = args[:salaries_file]
 
     fill_in("Name", with: name) if name
-    attach_file("Salaries", Rails.root + "spec/fixtures/#{salaries_file}") if salaries
-    attach_file("Rankings", Rails.root + "spec/fixtures/#{rankings_file}") if rankings
+    attach_file("Salaries", Rails.root + "spec/fixtures/#{salaries_file}") if salaries_file
+    attach_file("Rankings", Rails.root + "spec/fixtures/#{rankings_file}") if rankings_file
     click_on("Import")
   end
 
