@@ -8,16 +8,16 @@ profile: true
 
 <h3>Major Projects</h3>
 <ul>
-  <li><a target="_blank" href="https://fast-wildwood-4190.herokuapp.com/">Adddapt</a></li>
-  <li><a target="_blank" href="https://github.com/gxespino/how-many-patients">howmanypatients.com</a></li>
-  <li><a target="_blank" href="http://www.trysavory.com">Savory</a></li>
+  <li><a target="_blank" href="https://fast-wildwood-4190.herokuapp.com/">Adddapt</a> - two sided e-commerce application.</li>
+  <li><a target="_blank" href="https://github.com/gxespino/daily_fantasy_sports">Daily Fantasy Sports Algorithm</a> - data mapper that uses combinatorics to predict top potential football lineups.</li>
+  <li><a target="_blank" href="http://www.trysavory.com">Savory</a> - e-commerce platform for an on demand food startup.</li>
 </ul>
 
 <h3>Open Source Contributions</h3>
 <ul>
-  <li><a target="_blank" href="https://github.com/saturnflyer/purple_door/commits?author=gxespino">Purple Door Foundation</a></li>
-  <li><a target="_blank" href="https://github.com/us-vote-ruby-for-good/us-vote-api">U.S. Vote Foundation</a></li>
-  <li><a target="_blank" href="https://github.com/OperationCode/operationcode">Operation Code</a></li>
+  <li><a target="_blank" href="https://github.com/saturnflyer/purple_door/commits?author=gxespino">Purple Door Foundation</a> - wrote the RSpec test suite.</li>
+  <li><a target="_blank" href="https://github.com/us-vote-ruby-for-good/us-vote-api">U.S. Vote Foundation</a> - wrote scrapers & parsers for an API still in development.</li>
+  <li><a target="_blank" href="https://github.com/OperationCode/operationcode">Operation Code</a> - Implemented a donation feature via stripe.</li>
 </ul>
 
 <h3>Code Samples</h3>
