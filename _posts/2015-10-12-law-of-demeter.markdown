@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Law of Demeter"
+title: "Not Another Law of Demeter Post"
 date: 2015-10-12 20:25:40
 categories: Ruby Rails Refactoring
 ---
