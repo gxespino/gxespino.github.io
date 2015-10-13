@@ -32,7 +32,7 @@ feature "User imports datasets" do
 end
 {% endhighlight %}
 
-We can see quite clearly that even with just two scenarios, it's initially hard to figure out exactly whats going on in these tests. The reader is forced to abstract each step on the fly.
+We can see quite clearly that even with just one scenarios, it's initially hard to figure out exactly whats going on in this test. The reader is forced to abstract each step on the fly.
 
 The first step to breaking down this multi-level test is to separate it out into phases. Thoughbot approaches this by defining all their tests into [four phases](https://robots.thoughtbot.com/four-phase-test). We'll follow that convention for this exercise by separating out each step within a scenario into either the setup, exercise, verify or teardown phase. In this case we don't need to teardown any part of our test so we'll stick with just the first three phases. Here's what I get:
 
