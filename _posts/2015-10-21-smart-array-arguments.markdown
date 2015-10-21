@@ -20,7 +20,7 @@ class PokerHandValue
   end
 
   def hand
-    used_cards + kickers
+    @used_cards + @kickers
   end
 end
 ```
@@ -38,7 +38,7 @@ class PokerHandValue
   end
 
   def hand
-    used_cards + kickers
+    @used_cards + @kickers
   end
 end
 ```
