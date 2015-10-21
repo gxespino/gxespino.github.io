@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "How Not Lose Your Zsh Aliases in Tmux"
-date:   2015-10-07 01:08:17
+title:  "How Not to Lose Your Zsh Aliases in Tmux"
+date:   2015-10-07 12:38:57
 categories: Developer Environment ZSH Vim
 ---
 
