@@ -45,4 +45,18 @@ end
 
 Simple and elegant! Now our used_cards and kickers will always return an array no matter what sort of object sneaks into our arguments.
 
+So let's break down exactly what the Array method does for us:
+
+```ruby
+irb> Array(nil)
+---> []
+
+irb> Array([])
+---> []
+
+irb> Array(%w(Ace Ten King))
+---> ["Ace", "Ten", "King"]
+```
+
+With such a small change in our code, we increase it's flexibility, and reduce the potential of bugs. That's a great win with few, if any, side effects. 
 
