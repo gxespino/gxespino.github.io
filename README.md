@@ -12,7 +12,7 @@ For extra info: [Using Jekyll with Pages](https://help.github.com/articles/using
 Cactus theme includes:
 
 * Pagination
-* Rss feed
+* RSS feed
 * Google Analytics Tracking code
 * Code Syntax Highlight
 * Author's profile with picture header
