@@ -2,7 +2,7 @@
 layout: post
 title:  "Hash Array Iteration"
 date:   2015-07-23 17:05:15
-categories: jekyll update
+categories: update
 ---
 
 Here's a tricky one:
