@@ -9,7 +9,7 @@ When I first started learning Rails, I leaned pretty heavily on Ruby's `Enumerab
 
 I plan to write 4-5 posts on this topic but we can start by looking at how we can optimize Rails' `belongs_to` association queries.
 
-## Domain model
+### Domain model
 
 In one of my freelance Rails projects I had a domain model as such:
 
@@ -23,7 +23,7 @@ class Tier < ActiveRecord::Base
 end
 ```
 
-## Customers who belonged to a non free tier
+### Customers belonging to a non free tier
 
 The client wanted a way to e-mail all of the _customers who belonged to a non free tier_ (all the paying customers). Easily enough, this could be achieved with the following:
 
@@ -45,7 +45,7 @@ So, we're done, let's push to production? Well not so fast. Let's analyze this q
   ...redacted...
 ```
 
-## N+1 Anyone?
+### N+1 Anyone?
 
 Looks like we have a classic N+1 query in which for every Customer we're making a separate request to the Tiers table. You can only imagine how inefficient this would be for a mid sized company with thousands or millions of Customers.
 
