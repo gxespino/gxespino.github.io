@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Optimizing ActiveRecord & SQL Queries - Part 1
+title:  "Optimizing ActiveRecord & SQL Queries - Part 1"
 date:   2016-11-10 08:08:17
 categories: Ruby ActiveRecord
 ---
