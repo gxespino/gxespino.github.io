@@ -23,18 +23,18 @@ class Tier < ActiveRecord::Base
 end
 ```
 
-### Customers belonging to a non free tier
+### Customers belonging to a free tier
 
-The client wanted a way to e-mail all of the __customers who belonged to a non free tier__ (all the paying customers). Easily enough, this could be achieved with the following:
+The client wanted a way to e-mail all of the __customers belonging to a free tier__ (probably to guilt them into paying). Easily enough, this could be achieved with the following:
 
 ```ruby
-Customer.all.select { |customer| customer.tier.freemium? }
+Customer.all.select { |customer| customer.tier.freemium }
 ```
 
 So, we're done, let's push to production? Well not so fast. Let's analyze this query a little bit in Rails console to see what it's really doing to our database.
 
 ```
-2.3.0 :016 > Customer.all.select { |customer| !customer.tier.freemium? }
+2.3.0 :016 > Customer.all.select { |customer| customer.tier.freemium }
   Customer Load (1.6ms)  SELECT "customers".* FROM "customers"
   Tier Load (0.1ms)  SELECT  "tiers".* FROM "tiers" WHERE "tiers"."id" = ? LIMIT 1  [["id", 1]]
   Tier Load (0.0ms)  SELECT  "tiers".* FROM "tiers" WHERE "tiers"."id" = ? LIMIT 1  [["id", 1]]
@@ -104,7 +104,7 @@ Now, in the Customer model we can simply __ask__ Tier about itself and not __tel
 
 ```ruby
 class Customer < ActiveRecord::Base
-  def self.happily_paying
+  def self.not_paying
     joins(:tier).merge(Tier.freemium)
   end
 end
