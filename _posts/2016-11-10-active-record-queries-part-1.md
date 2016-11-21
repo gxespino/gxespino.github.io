@@ -25,7 +25,7 @@ end
 
 ### Customers belonging to a non free tier
 
-The client wanted a way to e-mail all of the _customers who belonged to a non free tier_ (all the paying customers). Easily enough, this could be achieved with the following:
+The client wanted a way to e-mail all of the __customers who belonged to a non free tier__ (all the paying customers). Easily enough, this could be achieved with the following:
 
 ```ruby
 Customer.all.select { |customer| customer.tier.freemium? }
@@ -49,13 +49,13 @@ So, we're done, let's push to production? Well not so fast. Let's analyze this q
 
 Looks like we have a classic N+1 query in which for every Customer we're making a separate request to the Tiers table. You can only imagine how inefficient this would be for a mid sized company with thousands or millions of Customers.
 
-What's worse is that we don't even need any actual data from the Tiers table as our final result should just be a list of Customers. With each query, _our database is sending back every one of these Tiers to the application where it is then built out into a full fledged ActiveRecord object_, unnecessarily.
+What's worse is that we don't even need any actual data from the Tiers table as our final result should just be a list of Customers. With each query, __our database is sending back every one of these Tiers to the application where it is then built out into a full fledged ActiveRecord object__, unnecessarily.
 
 ### What SQL query do we really want anyway?
 
 If you're familiar with SQL at all, sometimes it's easier to write up the optimized query that you want and to back your way into an ActiveRecord query (or not if it's a really complex query). In our case the SQL query we want is:
 
-```SQL
+```
 SELECT *
 FROM customers
 INNER JOIN tiers
@@ -65,26 +65,28 @@ WHERE tiers.paid = false
 
 ### ActiveRecord's `#join`
 
-This query should give us everything we need in one database call. ActiveRecord has convenience methods for most SQL statements. So lets break this down one by one starting with the join clause.
+The above query should give us everything we need in one database call. The main players are the JOIN and WHERE statements. Fortunately, ActiveRecord has convenience methods for these SQL statements. So, lets break this down one by one starting with the join clause.
+
+```ruby
+Customer.all.joins(:tier)
+```
+
+That was easy. If we check this out on the console we should more or less get something like:
 
 ```
-Customer.all.joins(:tier)
-
-# should more or less get us:
-
 SELECT *
 FROM customers
 INNER JOIN tiers
   ON tiers.id = customer.tier_id
 ```
 
-Great, so the next step is to simply implement the where clause:
+Great, so the next step is to simply implement the WHERE clause:
 
 ```
 Customer.all.joins(:tier).where(tiers: { paid: false })
 ```
 
-And, if we plug this into Rails console we'll see that we've more or less come up with the SQL query we were aiming for.
+And, if we plug this into Rails console we'll see that we're right back to the SQL query we were aiming for.
 
 ### Refactor with `#merge`
 
