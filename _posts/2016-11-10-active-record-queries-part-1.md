@@ -113,5 +113,6 @@ end
 And as a last check, we can try this out in the console one more time to ensure we're getting the same SQL from before--which it does!
 
 ```
+2.3.0 :016 > Customer.not_paying
  Customer Load (0.5ms)  SELECT "customers".* FROM "customers" INNER JOIN "tiers" ON "tiers"."id" = "customers"."tier_id" WHERE "tiers"."paid" = 'f'
 ```
