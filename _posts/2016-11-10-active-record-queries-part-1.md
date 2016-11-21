@@ -82,7 +82,7 @@ INNER JOIN tiers
 
 Great, so the next step is to simply implement the WHERE clause:
 
-```
+```ruby
 Customer.all.joins(:tier).where(tiers: { paid: false })
 ```
 
