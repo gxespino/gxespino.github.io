@@ -100,7 +100,7 @@ class Tier < ActiveRecord::Base
 end
 ```
 
-Now, in the Customer model we can simply __ask__ Tier about itself and not __tell__ it what to do. Our complete solution is now:
+Now, in the Customer model we can simply __tell__ Tier what to do and not __ask__ it about itself. Our complete solution is now:
 
 ```ruby
 class Customer < ActiveRecord::Base
