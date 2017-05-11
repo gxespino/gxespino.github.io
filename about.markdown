@@ -41,19 +41,21 @@ profile: true
 
 <p>I love software, computers, startups and technology! In general, I am very curious and like to know how things tick and work. I learn best when I'm neck deep in new technology, stretching the boundaries of my knowledge. When I can, I prefer working with my favorite frameworks, tools, languages & stack of choice:</p>
 
-* Ruby
-* Rails
-* React
-* Redux
-* PostgreSQL
-* Github
-* Minitest
-* RSpec
-* AWS/S3
-* HTML/CSS/Saas
-* Redis
-* Sidekiq
-* Vim/Tmux/NERDtree
+<ul>
+  <li>Ruby</li>
+  <li>Rails</li>
+  <li>React</li>
+  <li>Redux</li>
+  <li>PostgreSQL</li>
+  <li>Github</li>
+  <li>Minitest</li>
+  <li>RSpec</li>
+  <li>AWS/S3</li>
+  <li>HTML/CSS/Saas</li>
+  <li>Redis</li>
+  <li>Sidekiq</li>
+  <li>Vim/Tmux/NERDtree</li>
+</ul>
 
 <p>I am an ardent proponent of TDD, SRP, micro services, object oriented and domain driven design. I enjoy design patterns and would love nothing more than to work with properly utilized abstractions ~ keyword, properly.</p>
 
