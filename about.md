@@ -4,26 +4,37 @@ permalink: about/
 profile: true
 ---
 
-<p>I'm a software developer based in Washington DC. I'm also a registered nurse turned developer who is passionate about solving healthcare's problems via software. This site features articles regarding coding, nursing, and startups - also occasional essays on topics I'm interested in, which could pretty much be anything.
+<p>I'm a software developer based in Washington DC. I'm also a registered nurse turned developer who turned a lifelong hobby into a second career. Needless to say, I have extensive healthcare domain knowledge that'd I'd love to leverage to make healthcare better. This site features articles regarding coding, nursing, and startups - also occasional essays on topics I'm interested in, which could pretty much be anything.
 
-<h3>Open Source Contributions</h3>
+<h3>Side Projects</h3>
 <ul>
-  <li><a target="_blank" href="https://github.com/saturnflyer/purple_door/commits?author=gxespino">Purple Door Foundation</a> - wrote the RSpec test suite.</li>
-  <li><a target="_blank" href="https://github.com/us-vote-ruby-for-good/us-vote-api">U.S. Vote Foundation</a> - wrote scrapers & parsers for an API still in development.</li>
-  <li><a target="_blank" href="https://github.com/OperationCode/operationcode">Operation Code</a> - Implemented a donation feature via stripe.</li>
+  <li><a target="_blank" href="https://github.com/gxespino/paradigm">Paradigm</a> - Template generator gem to easily add Service abstractions into Rails applications.</li>
+  <li><a target="_blank" href="https://github.com/gxespino/sf-frontend">SmarterFlips</a> - Smarter Flips is a SaaS solution for Real Estate Investors. The application is a work in progress, single page app using ReactJS and firebase.</li>
 </ul>
 
 <h3>Lightning Talks</h3>
 <ul>
+
   <li>
-     <a target="_blank" href="http://www.slideshare.net/gespinosa1/web-mock">Stubbing with WebMock</a>
-<p>Gave a 5 minute talk on stubbing external services within tests using the WebMock gem. I gave a live demonstration on WebMock's usage via a TDD approach and lastly, I discussed the pros and cons of stubbing external services in general.</p>
+    <a target="_blank" href="https://www.slideshare.net/gespinosa1/design-principles-solid-75896248">SOLID Design Principles</a>
+    <p>Explained SOLID principles to a group of new Ruby developers and developed exercises to implement real world refactors using SOLID.</p>
   </li>
+
+  <li>
+    <a target="_blank" href="https://www.slideshare.net/gespinosa1/metaprogramming-patterns">Popular Metaprogramming Patterns</a>
+    <p>Identified and evaluated numerous metaprogramming techniques found in popular Ruby libraries.</p>
+  </li>
+
+  <li>
+    <a target="_blank" href="https://www.slideshare.net/gespinosa1/polymorphism-ruby">Replacing Conditional with Polymorphism</a>
+    <p>Gave a talk on the advanced OOP principle of replacing conditional statements in code with object polymorphism.</p>
+  </li>
+
 </ul>
 
 <h3>Contact</h3>
 <p>Email: <a href="mailto:glennpeter.espinosa@gmail.com?Subject=Hey%20Glenn!" target="_top">glennpeter dot espinosa at gmail dot com</a></p>
-<p>Connect with me on <a target="_blank" href="http://www.twitter.com/gpespn">Twitter</a>, <a target="_blank" href="http://www.github.com/gxespino">GitHub</a>, and <a target="_blank" href="https://www.linkedin.com/profile/view?id=80349752">LinkedIn</a>. My resume can be downloaded here: <a target="_blank" href="http://gespinosa.org/assets/downloads/EspinosaResume.pdf">download resume.</a>
+<p>Connect with me on <a target="_blank" href="http://www.twitter.com/gpespn">Twitter</a>, <a target="_blank" href="http://www.github.com/gxespino">GitHub</a>, and <a target="_blank" href="https://www.linkedin.com/profile/view?id=80349752">LinkedIn</a>. My resume can be downloaded here: <a target="_blank" href="http://gespinosa.org/assets/downloads/EspinosaResume2017.pdf">download resume.</a>
 
 <h3>Can I hire you?</h3>
 <p>Currently, I am not actively looking for new opportunities. But, if I were, I'd say that I have extensive experience working with and founding startups, meeting tight deadlines, fast iteration sprints, and optimizing for the bottom line. I'm the founder of <a target="_blank" href="http://www.meetup.com/Alexandria-Code-Coffee/">Alexandria Code & Coffee</a> where developers reach out and mentor new developers.</p> 
@@ -32,6 +43,8 @@ profile: true
 
 * Ruby
 * Rails
+* React
+* Redux
 * PostgreSQL
 * Github
 * Minitest
