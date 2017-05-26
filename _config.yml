@@ -9,7 +9,7 @@ redcarpet:
 
 highlighter: # rouge
 
-gems: [jekyll-paginate]
+gems: [rouge, jekyll-paginate]
 
 paginate: 10
 baseurl: /
