@@ -8,8 +8,8 @@ profile: true
 
 <h3>Side Projects</h3>
 <ul>
-  <li><a target="_blank" href="https://github.com/gxespino/paradigm">Paradigm</a> - Template generator gem to easily add Service abstractions into Rails applications.</li>
-  <li><a target="_blank" href="https://github.com/gxespino/sf-frontend">SmarterFlips</a> - Smarter Flips is a SaaS solution for Real Estate Investors. The application is a work in progress, single page app using ReactJS and firebase.</li>
+  <li><a target="_blank" href="https://github.com/gxespino/paradigm">Paradigm</a><p>Template generator gem to easily add Service abstractions into Rails applications.</p></li>
+  <li><a target="_blank" href="https://github.com/gxespino/sf-frontend">SmarterFlips</a><p>Smarter Flips is a SaaS solution for Real Estate Investors. The application is a work in progress, single page app using ReactJS and firebase.</p></li>
 </ul>
 
 <h3>Lightning Talks</h3>

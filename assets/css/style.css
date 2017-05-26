@@ -65,32 +65,33 @@ img[alt=rest] {
 margin-bottom: 20px;
 }
 h3 { margin-top: 50px; }
-li { margin-bottom: 10px; }
+li { margin-bottom: 10px; line-height: 32px;}
 a { line-height: 10px; }
 
 /* Base */
 html, body { height: 100%; }
 
 body {
-	font:14px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font:20px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #666;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 }
 
 h1 {
-	font-size: 30px;
+	font-size: 38px;
 	letter-spacing: -1px;
 	color: #222;
 	font-weight: bold;
 }
 
 h2 {
-	font: italic 19px/1.3em Georgia,serif;
+	font: italic 19px/1.5em Georgia,serif;
 	color: #bbb;
 }
 
 .profile #wrapper {
+  margin: 0px 0px 0px 150px;
 	padding: 100px 40px 0px;
 	max-width: 800px;
 	margin: 0 auto;
@@ -147,7 +148,7 @@ nav.main-nav a {
 	right: 6px;
 	padding: 8px 12px;
 	color: #5badf0;
-	font-size: 13px;
+	font-size: 20px;
 	/*font-weight: bold;*/
 	line-height: 1.35;
 	border-radius: 3px;
@@ -160,14 +161,14 @@ nav.main-nav a.cta {
 }
 
 #wrapper {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 1000px;
+        margin: 0 auto;
   padding: 60px 40px 100px 40px;
 }
 
 #wrapper.home {
 	max-width: 800px;
-	margin: 0 auto;
+        margin: 0 auto;
 	padding: 0px 40px 20px 40px;
 }
 
@@ -203,8 +204,8 @@ a,
 	transition: all 0.15s ease;
 }
 
-ul 	{ margin:0; padding:0; }
-li	{ list-style-type:circle; list-style-position:inside; }
+ul 	{ margin:25px; padding:0; }
+li	{ }
 
 /* Line Height */
 #post-body, p { line-height:1.7; }
@@ -243,14 +244,14 @@ em, i { font-style: italic; }
 }
 
 .post header {
-	text-align:center;
+	text-align: left;
 
 }
 
 .post h1 {
 	margin-bottom:2 0px;
 	color: #222;
-	font: 300 32px/1.4em "Helvetica Neue", Helvetica,Arial,sans-serif;
+	font: 300 38px/1.4em "Helvetica Neue", Helvetica,Arial,sans-serif;
 }
 
 .post h2 {
@@ -273,7 +274,7 @@ em, i { font-style: italic; }
 }
 
 #post-list h2 {
-	font: normal 17px/1.5em "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font: normal 20px "Helvetica Neue",Helvetica,Arial,sans-serif;
 	color: #aaa;
 	max-width: 400px;
 	margin-top: 2px;
@@ -281,9 +282,9 @@ em, i { font-style: italic; }
 
 h3, h4, h5 { color:#333; }
 
-h3 { font-size:20px; font-weight: 400; }
-h4 { font-size:16px; font-weight:bold; }
-h5 { font-size:15px; font-weight: bold; }
+h3 { font-size:24px; font-weight: 400; }
+h4 { font-size:20px; font-weight:bold; }
+h5 { font-size:18px; font-weight: bold; }
 
 h6 {
 	font-size: 13px;
@@ -404,14 +405,14 @@ Post List
 }
 
 #post-list li+li {
-	padding-top: 20px;
+	padding-top: 25px;
 	border-top: 1px solid #eee;
 }
 
 #post-list a {
-	color: #333;
+	color: #444;
 	display: block;
-	font: bold 19px/1.7 "Helvetica Neue",helvetica,Arial,sans-serif;
+	font: 22px "Helvetica Neue",helvetica,Arial,sans-serif;
 }
 
 #post-list .dates {
@@ -644,7 +645,7 @@ h2.month {
 }
 
 /* Media Queries */
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 740px) {
 	#wrapper { padding:20px 20px 20px 20px;}
 	#header { margin-bottom: 60px; border-bottom: 1px solid #eee; }
 	.post { margin: 40px 0; }

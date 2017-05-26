@@ -1,6 +1,6 @@
 <nav class="main-nav">
     {% if page.url != "/index.html" %}
-        <a href='{{ site.baseurl }}{{ page.about }}'> <span class="arrow">←</span> Home </a>
+        <a href='{{ site.baseurl }}{{ page.about }}'>Home </a>
     {% endif %}
 
     {% if page.url != "/about/" %}
@@ -8,5 +8,6 @@
             <a href='{{ site.baseurl }}about'>About </a>
         {% endif %}
     {% endif %}
-    <a class="cta" href="{{ site.baseurl }}feed.xml">Subscribe</a>
+
+            <a href='{{ site.baseurl }}assets/downloads/EspinosaResume2017.pdf'>Resume </a>
 </nav>
