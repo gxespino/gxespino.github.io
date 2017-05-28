@@ -14,7 +14,7 @@ gems: [rouge, jekyll-paginate]
 paginate: 10
 baseurl: /
 domain_name: 'http://gespinosa.org'
-disqus: false
+disqus: true
 disqus_shortname: 'glennespinosa'
 
 # Details for the RSS feed generator
