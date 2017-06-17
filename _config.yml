@@ -1,5 +1,5 @@
-name: Glenn Dreams of Code
-description: Code, Ruby, Musings, etc.
+name: Glenn Espinosa
+description: Musings of a software craftsman
 meta_description: "A nurse/hackers site about programming and healthcare"
 
 aboutPage: true
@@ -13,14 +13,14 @@ gems: [rouge, jekyll-paginate]
 
 paginate: 10
 baseurl: /
-domain_name: 'http://gespinosa.org'
+domain_name: 'http://glennespinosa.com'
 disqus: true
 disqus_shortname: 'glennespinosa'
 
 # Details for the RSS feed generator
-url:            'http://gespinosa.org'
+url:            'http://glennespinosa.com'
 author:         'Glenn Espinosa'
-authorTwitter:  'gpespn'
+authorTwitter:  'gxespino'
 
 permalink:       /:year/:title/
 

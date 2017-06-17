@@ -57,6 +57,3 @@ When we are requesting a web page on our browser (the client), we send out a req
 Good so far? It's a very top level view and a few steps could use further clarification. I also didn't touch on CSS and Javascript at all. 
 
 I'll save all that for a later post while also diving more into how this all ties in Rails specifically. We'll tackle CRUD, routes, and MVC in part 2. 
-
-
-

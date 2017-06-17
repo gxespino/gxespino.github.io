@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Optimizing ActiveRecord & SQL Queries - Part 1"
+title:  "Optimizing ActiveRecord & SQL Queries"
 date:   2016-11-10 08:08:17
 categories: Ruby ActiveRecord
 ---
@@ -33,7 +33,7 @@ Customer.all.select { |customer| customer.tier.freemium }
 
 So, we're done, let's push to production? Well not so fast. Let's analyze this query a little bit in Rails console to see what it's really doing to our database.
 
-```
+```console
 2.3.0 :016 > Customer.all.select { |customer| customer.tier.freemium }
   Customer Load (1.6ms)  SELECT "customers".* FROM "customers"
   Tier Load (0.1ms)  SELECT  "tiers".* FROM "tiers" WHERE "tiers"."id" = ? LIMIT 1  [["id", 1]]
@@ -55,7 +55,7 @@ What's worse is that we don't even need any actual data from the Tiers table as 
 
 If you're familiar with SQL at all, sometimes it's easier to write up the optimized query that you want and to back your way into an ActiveRecord query (or not if it's a really complex query). In our case the SQL query we want is:
 
-```
+```sql
 SELECT *
 FROM customers
 INNER JOIN tiers
@@ -73,7 +73,7 @@ Customer.all.joins(:tier)
 
 That was easy. If we check this out on the console we should more or less get something like:
 
-```
+```sql
 SELECT *
 FROM customers
 INNER JOIN tiers
@@ -112,7 +112,7 @@ end
 
 And as a last check, we can try this out in the console one more time to ensure we're getting the same SQL from before--which it does!
 
-```
+```console
 2.3.0 :016 > Customer.not_paying
  Customer Load (0.5ms)  SELECT "customers".* FROM "customers" INNER JOIN "tiers" ON "tiers"."id" = "customers"."tier_id" WHERE "tiers"."paid" = 'f'
 ```
