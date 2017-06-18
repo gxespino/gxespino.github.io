@@ -63,11 +63,11 @@ class Base::CreateUserAction
 end
 ```
 
-Ok, so it's starting to make a little more sense now. We have your standard _Template Pattern_, and, knowing that context, I can probably assume that all of the other `CreateUserAction` subclasses will also rely on a public `#execute` method.
+Ok, so it's starting to make a little more sense now. We have your standard _Template Pattern_, and, knowing that context, I can probably assume that all of the other `CreateUserAction` subclasses will also rely on a public `.execute` method.
 
 Still, I don't like the above code and again, here's why:
 
-1. While the team has succeeded in DRYing up the code, they've done that by coupling all of the `CreateUserAction` subclasses together. Any change to the skeleton algorithm in `.execute` will reverberate down to all of the subclasses, possibly leading to unintended behavior. How many times have you refactored a parent class, had all of its test pass, but somehow broke tests for one of its subclasses?
+1. While the team has succeeded in DRYing up the code, they've done that by coupling all of the `CreateUserAction` subclasses together. Any change to the skeleton algorithm in `.execute` will reverberate down to all of the subclasses, possibly leading to unintended behavior. How many times have you refactored a parent class, had all of its tests pass, but somehow broke tests for one of its subclasses?
 2. Any future variance to the `.execute` algorithm will inevitably lead to either an explosion of conditionals, additional layers of of inheritance, the introduction of multiple inheritance (modules), or some tangled combination of all three. 
 
 A lot of times I'll hear that the pattern above is _probably_ fine and  a lot better (maybe) than duplicating the execution logic everywhere. Besides, how often can we expect the process of posting to external APIs to change? Not often... right?
@@ -114,9 +114,9 @@ class CreateAttorney
 end
 ```
 
-It wasn't hard to get to the above refactoring and yet I'd argue our project is much more maintainable and extensible with it. `CreateUserAction` is a high level, plain ole' ruby object that is no longer concerned with serializing `user_data`. It builds the `post_body` directly with the `user_data` it's provided with. 
+It wasn't hard to get to the above refactoring and yet I'd argue our project is much more maintainable and extensible with it. `CreateUserAction` is a high level, plain ole' ruby object that is no longer concerned with serializing `user_data`. It builds the `post_body` directly from the `user_data` it's provided with.
 
-Instead, the serializer object is a injected into `CreateAttorney`, giving us the flexibility to alter that part of the algorithm in the future, without modifying our current app code. Another improvement is that `CreateAttorney`'s functionality and responsibilities are immediately made available when you open up the class. Although, I'm not a huge fan of the `execute` method as it could be more descriptive, we can see that `CreateAttorney` delegates the actual http call execution to whatever action object it is initialized with.
+Instead, the serializer object is injected into `CreateAttorney`, giving us the flexibility to alter that part of the algorithm in the future, without modifying our current app code. Another improvement is that `CreateAttorney`'s functionality and responsibilities are immediately made available when you open up the class. Although, I'm not a huge fan of the `execute` method as it could be more descriptive, we can see that `CreateAttorney` delegates the actual http call execution to whatever action object it is initialized with.
 
 By encapsulating logic into small, separate objects, and then composing those objects, we're better able to deal with future variants in our algorithm. Any future scenario can be met with an endless combination of objects, any future variant can be a new object.
 
