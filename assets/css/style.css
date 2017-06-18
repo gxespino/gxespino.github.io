@@ -217,7 +217,9 @@ a:hover,
 	color: #3e9bb7;
 }
 
-ul 	{ margin:25px; padding:0; }
+ul 	{ margin: 0px 0px 40px 40px; padding:0; }
+ol 	{ margin: 0px 0px 40px 40px; padding:0; }
+
 li	{ }
 
 /* Line Height */
