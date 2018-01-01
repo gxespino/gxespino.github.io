@@ -1,6 +1,5 @@
 name: Glenn Espinosa
 description: Musings of a software craftsman
-meta_description: "A nurse/hackers site about programming and healthcare"
 
 aboutPage: true
 
@@ -12,7 +11,7 @@ highlighter: # rouge
 gems: [rouge, jekyll-paginate]
 
 paginate: 10
-baseurl: /
+baseurl: '/'
 domain_name: 'http://glennespinosa.com'
 disqus: true
 disqus_shortname: 'glennespinosa'
